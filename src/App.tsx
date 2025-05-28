@@ -1,6 +1,5 @@
-export function App() {
+import { Button } from "@/components/ui/button";
 
-  return (
-    <h1>hello world</h1>
-  )
+export function App() {
+  return <Button variant="default">Clique aqui</Button>;
 }
