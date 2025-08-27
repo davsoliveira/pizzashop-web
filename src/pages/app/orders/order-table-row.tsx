@@ -84,7 +84,7 @@ export function OrderTableRow({ order }: OrderTableRowProps) {
       <TableCell>
         <Dialog open={isDetailsOpen} onOpenChange={setIsDetailsOpen}>
           <DialogTrigger asChild>
-            <Button variant="outline" size='xs'>
+            <Button variant="outline" size="sm">
               <Search className='h-3 w-3'>
                 <span className='sr-only'>Detalhes do pedido</span>
               </Search>
@@ -119,7 +119,7 @@ export function OrderTableRow({ order }: OrderTableRowProps) {
           <Button
             variant="outline"
             disabled={isApprovingOrder}
-            size="xs"
+            size="sm"
             onClick={() => approveOrderFn({ orderId: order.orderId })}
           >
             <ArrowRight className="mr-2 h-3 w-3" />
@@ -131,7 +131,7 @@ export function OrderTableRow({ order }: OrderTableRowProps) {
           <Button
             variant="outline"
             disabled={isDispatchingOrder}
-            size="xs"
+            size="sm"
             onClick={() => dispatchOrderFn({ orderId: order.orderId })}
           >
             <ArrowRight className="mr-2 h-3 w-3" />
@@ -143,7 +143,7 @@ export function OrderTableRow({ order }: OrderTableRowProps) {
           <Button
             variant="outline"
             disabled={isDeliveringOrder}
-            size="xs"
+            size="sm"
             onClick={() => deliverOrderFn({ orderId: order.orderId })}
           >
             <ArrowRight className="mr-2 h-3 w-3" />
@@ -156,7 +156,7 @@ export function OrderTableRow({ order }: OrderTableRowProps) {
         <Button
           disabled={!['pending', 'processing'].includes(order.status) || isCancelingOrder}
           variant='ghost'
-          size='xs'
+          size="sm"
           onClick={() => cancelOrderFn({ orderId: order.orderId })}
         >
           <X className='mr-2 h-3 w-3' />

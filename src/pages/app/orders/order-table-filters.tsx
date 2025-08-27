@@ -105,12 +105,12 @@ export function OrderTableFilters() {
         )}
       />
 
-      <Button type="submit" variant='secondary' size='xs'>
+      <Button type="submit" variant='secondary' size="sm">
         <Search className="mr-2 h-4 w-4" />
         Filtrar resultados
       </Button>
 
-      <Button onClick={handleClearFilter} type="button" variant='outline' size='xs'>
+      <Button onClick={handleClearFilter} type="button" variant='outline' size="sm">
         <X className="mr-2 h-4 w-4" />
         Remover filtros
       </Button>
